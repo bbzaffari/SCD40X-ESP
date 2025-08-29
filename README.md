@@ -1,5 +1,5 @@
 ---
-# SCD-40-ESP
+# SCD40-ESP
 
 ---
 
@@ -9,6 +9,10 @@
 
 The sensor operates at **I²C address 0x62** and communicates using **16-bit command words** with CRC validation. The driver abstracts this low-level interaction into a well-structured interface, respecting timing, start/stop conditions, and expected response lengths, while providing high-level functions for sensor initialization, periodic data acquisition, and configuration. CRC-8 verification (polynomial 0x31) is implemented manually for full protocol compliance, and all operations adhere to Sensirion’s recommended flowchart logic. Debugging is assisted via consistent `ESP_LOG` tagging throughout the implementation.
 
-This repository is ideal for embedded developers seeking to integrate precise CO₂ sensing into their IoT projects, HVAC systems, or indoor air quality monitors. It is particularly useful when combined with telemetry backends such as MQTT or LoRa, as the code was designed to be lightweight, non-blocking, and easily portable. Users are encouraged to consult the official SCD4x datasheet and design-in guide for calibration offsets, thermal isolation tips, and airflow considerations to achieve sensor-grade accuracy in real-world conditions.
+This repository is ideal for embedded developers seeking to integrate precise CO₂ sensing into their IoT projects, HVAC systems, or indoor air quality monitors. It is particularly useful when combined with telemetry backends. 
 
+## Documentation
+
+For detailed electrical characteristics, communication protocols, and performance specifications, refer to the official  
+[SCD40 Datasheet](https://sensirion.com/media/documents/E0F04247/631EF271/CD_DS_SCD40_SCD41_Datasheet_D1.pdf)
 ---

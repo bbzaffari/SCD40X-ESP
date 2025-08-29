@@ -15,4 +15,5 @@ This repository is ideal for embedded developers seeking to integrate precise CO
 
 For detailed electrical characteristics, communication protocols, and performance specifications, refer to the official  
 [SCD40 Datasheet](https://sensirion.com/media/documents/E0F04247/631EF271/CD_DS_SCD40_SCD41_Datasheet_D1.pdf)
+
 ---
